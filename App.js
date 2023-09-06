@@ -6,20 +6,27 @@ export default function App() {
 
   const [biscoitoquebrado, setQuebrarBiscoito] = useState(false) 
   const [mensagem, setMensagem] = useState('') 
-
   const frases = [
     "Acredite em si mesmo e os outros também acreditarão.",
-    "A paciência é a chave para todas as portas.",
+
     "O sucesso nasce do desejo de vencer.",
+
     "A vida é uma jornada, não um destino.",
+
+    "A paciência é a chave para todas as portas.",
+
     "A sorte favorece os corajosos.",
+
     "A simplicidade é a melhor forma de sofisticação.",
+
     "Grandes conquistas exigem grande dedicação.",
+
     "Siga sua intuição, ela raramente está errada.",
+
     "O conhecimento é o único tesouro que ninguém pode roubar.",
+
     "Seja a mudança que você deseja ver no mundo."
   ];
-  
   function msg() {
     setQuebrarBiscoito(true)
     const indiceAleatorio = parseInt(Math.random() * frases.length)
@@ -54,7 +61,6 @@ export default function App() {
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -85,7 +91,6 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     alignSelf: "center",
   },
-
   texto: {
     fontSize: 20,
     color: '#72874c',
